@@ -1,0 +1,49 @@
+<!--<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Recent Projects</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="" alt="" /></a>
+											<h3>Human-Robot Interactions</h3>
+											<p>Developing bimanual handovers to provide a humanlike user experience wit multi-handed handovers.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/Rendered F5.jpg" alt="" /></a>
+											<h3>Reuleaux Machine</h3>
+											<p>Reproducing the design of F05 Wedding Chamber Crank Mechanism, 
+												from the Cornell Reuleaux Collection of Kinematic Models. This
+												project included preliminary sketches of the device, CAD, rendering,
+												motion study, exploded view, and part drawing. I really enjoyed 
+												working with Fusion 360 to reproduce this design digitally. </p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+
+											</ul>
+										</article>
+									</div>
+								</section>-->
+
+
+
+
+										<li>
+											<span class="opener">Projects</span>
+											<ul>
+												<li><a href="Mo-Moghaddasi.github.io/projects">Coin Sorter/Counter</a></li>
+												<li><a href="Mo-Moghaddasi.github.io/projects">Reuleaux Machine</a></li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Research</span>
+											<ul>
+												<li><a href="#">Development of Secondary Batteries</a></li>
+												<li><a href="#">Human-Robot Interactions</a></li>
+											</ul>
+										</li>
