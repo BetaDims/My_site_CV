@@ -1,0 +1,9 @@
+# Windows / WSL metadata cruft
+*:Zone.Identifier
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip

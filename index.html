@@ -1,120 +1,383 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portfolio | Franko Sanchez</title>
-		<head>
-			<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-		</head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/favicon.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="theme-color" content="#ffffff">
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Franko Sanchez — Mechanical Engineer & Data Analyst</title>
+<meta name="description" content="Franko Sanchez — Mechanical Engineer bridging field infrastructure, data analytics and Python automation. Selected work, experience and CV.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  /* No-flash theme: apply persisted prefs before first paint */
+  (function () {
+    try {
+      document.documentElement.setAttribute('data-theme', localStorage.getItem('portfolio-theme') || 'warm');
+      var a = localStorage.getItem('portfolio-accent');
+      if (a) document.documentElement.style.setProperty('--gold', a);
+    } catch (e) { document.documentElement.setAttribute('data-theme', 'warm'); }
+  })();
+</script>
+</head>
+<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-name" href="index.html">Franko Sanchez</a>
+  <ul class="nav-links">
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a class="nav-cv" href="https://drive.google.com/drive/folders/your-cv-link" target="_blank" rel="noopener">CV ↓</a></li>
+  </ul>
+</nav>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow fade-up">Mechanical Engineer · Data · Automation</div>
+    <h1 class="hero-headline fade-up">
+      Field.<br>
+      <span class="accent">Data.</span><br>
+      Code.
+    </h1>
+    <p class="hero-sub fade-up">
+      Bridging mechanical engineering and software. I manage large-scale infrastructure projects in the field — airports, metro lines — and build the Python tools and Power BI dashboards that make data actionable.
+    </p>
+    <div class="hero-actions fade-up">
+      <a href="#projects" class="btn-primary">See my work</a>
+      <a href="https://drive.google.com/drive/folders/your-cv-link" target="_blank" rel="noopener" class="btn-outline">Download CV</a>
+    </div>
+  </div>
+  <div class="hero-right fade-up">
+    <div class="hero-photo">
+      <img src="images/profile.jpg" alt="Portrait of Franko Sanchez" onerror="this.style.display='none'">
+      <div class="hero-photo-initials">FDS</div>
+      <div class="hero-photo-label">Franko Dimitrios Sanchez · Lima, Peru</div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="stat-num">2+</div>
+        <div class="stat-label">Years in large infrastructure projects</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">75%</div>
+        <div class="stat-label">Processing time cut via Python</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">40%</div>
+        <div class="stat-label">Daily productivity gain automated</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Major telecom deployments</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Portfolio</strong> </a>
-									<ul class="icons">
-										<li><a href="https://www.linkedin.com/in/franko-dimitrios-sanchez-betancourt-189114a0/"
-											   class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-									</ul>
-								</header>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header fade-up">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Selected Work</h2>
+    <div class="section-rule"></div>
+  </div>
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Franko Sanchez<br />
-											</h1>
-											</header>
-											<p style="margin-top:-.7cm;"><p></p>
-											<h2 style="font-size:100%;">Graduated from Mechanical Engineering</h2>
-											<p style="margin-top:-.25cm;"><p></p>
-											<p style="font-size:120%;">Welcome to my site!</p>
-												<p style="margin-top:-.25cm;">
-													My passion for becoming a mechanical engineer rises when I was a teenager. I always wanted to know how things work and what phenomenas
-													are behind it. Growing up, I found my source of inspiration in different youtube channels such 
-													as: <a href="https://www.youtube.com/@smartereveryday">SmarterEveryDay</a>, <a href="https://www.youtube.com/@MarkRober">Mark Rober</a>,
-													 <a href="https://www.youtube.com/@TheEfficientEngineer">The Efficient Engineer</a> and <a href="https://www.youtube.com/@MustardChannel">Mustard</a>. 
-													 Their content made me develop the habit of constantly learning about new technologies and to bet on sustainable development. My goal is to be 
-													 able to create a positive impact on humanity and leave things better than I found them.  To actualize and bring these goals to life, I have 
-													 tried to make the most of the opportunities I have been fortunate enough to enjoy during my time as a student.
-											   <br>Please feel free to contact me at: 
-											   <a href="mailto:sanchezbeta97@gmail.com" >sanchezbeta97@gmail.com</a></p></br>
-									</div>
-									<!-- <span class="image object" > -->
-										<img src="images\PP.jpg" width = "250" height="350" />
-									<!-- </span> -->	
-								</section>
-								<section>
-									<h2>Educación</h2>
-									<div class="row">
-										<div class="column">
-											<img style="margin-left:1cm" src="https://www.esc-toronto.com/images/old-esc-logo.svg" width="200" height="150">
-											<img style="margin-left:3cm" src="images/UNT_logo.png" width ="200" height = "150">
-											<img style="margin-left:3cm" src="images/CIDUNT_logo.png" width ="200" height = "150">
-											<pre id="grados_font"><p>       Diploma, Standard English Program                            Mechanical Engineering                         	      Diploma, Standard English Program</p></pre>
-											<pre id="grados_font"><p style="margin-top: -0.7cm;" m>                High Intermediate Level 8      		      	                    Graduated         					 	      Advanced Level</p></pre>
-											<pre id="grados_font"><p style="margin-top: -0.7cm;" m>               August 2014 - January 2015          	  	        March 2018 - January 2023                              	        April 2021 - March 2022</p></pre>
-										</div>
-									</div>
-								</section>
+  <div id="project-list">
 
-						</div>
-					</div>
+    <a class="project-row fade-up" href="projects/das-airport.html">
+      <div class="proj-num">01</div>
+      <div class="proj-body">
+        <div class="proj-title">DAS System — Jorge Chavez Airport T2 <span class="proj-arrow">→</span></div>
+        <p class="proj-desc">Supervised the deployment of a distributed antenna system at Peru's new international terminal. Developed a Python script that reduced resource-scheduling processing time by 75%, saving S/ 48,000 annually.</p>
+        <div class="proj-tags">
+          <span class="tag">Infrastructure</span>
+          <span class="tag">Python</span>
+          <span class="tag">Huawei</span>
+          <span class="tag">Airport</span>
+        </div>
+      </div>
+      <div class="proj-visual">
+        <div class="proj-thumb">
+          <div class="thumb-infra">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div>
+          </div>
+        </div>
+      </div>
+    </a>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+    <a class="project-row fade-up" href="projects/metro-lima.html">
+      <div class="proj-num">02</div>
+      <div class="proj-body">
+        <div class="proj-title">DAS System — Metro de Lima, Line 2 <span class="proj-arrow">→</span></div>
+        <p class="proj-desc">Coordinated OT3 work orders with security control centers and implemented station-by-station progress reports, significantly reducing dead times and improving deployment visibility across underground stations.</p>
+        <div class="proj-tags">
+          <span class="tag">Infrastructure</span>
+          <span class="tag">OT3</span>
+          <span class="tag">Telecom</span>
+          <span class="tag">Metro</span>
+        </div>
+      </div>
+      <div class="proj-visual">
+        <div class="proj-thumb">
+          <div class="thumb-infra" style="background:#0f1f35">
+            <div style="background:rgba(184,147,74,0.2)"></div><div style="background:rgba(184,147,74,0.5)"></div><div></div><div style="background:rgba(184,147,74,0.3)"></div><div></div>
+            <div></div><div style="background:rgba(184,147,74,0.6)"></div><div style="background:rgba(184,147,74,0.2)"></div><div></div><div style="background:rgba(184,147,74,0.4)"></div>
+            <div style="background:rgba(184,147,74,0.3)"></div><div></div><div style="background:rgba(184,147,74,0.5)"></div><div style="background:rgba(184,147,74,0.2)"></div><div></div>
+          </div>
+        </div>
+      </div>
+    </a>
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-									</header>
-									<ul>
-										<li><a href="index.html">Home</a></li>
-										<li><a href="Projects.html">Projects</a></li>
-										<li><a href="Skills.html">Skills</a></li>
-										<li><a href="https://docs.google.com/document/d/1qJIeAquVTByQemlAbryBhPiCqRvgnOcshG3A7q5hKCc/edit?usp=sharing">Curriculum Vitae</a></li>
-										<li><a href="mailto:sanchezbeta97@gmail.com">Contact me</a></li>
-									</ul>
-								</nav>
+    <a class="project-row fade-up" href="projects/powerbi-portfolio.html">
+      <div class="proj-num">03</div>
+      <div class="proj-body">
+        <div class="proj-title">Power BI — Project Portfolio Dashboard <span class="proj-arrow">→</span></div>
+        <p class="proj-desc">Built an executive dashboard tracking purchase orders, follow-up activities, and project KPIs across multiple active sites. Gave leadership real-time visibility into budget and execution status.</p>
+        <div class="proj-tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">Data</span>
+          <span class="tag">Dashboard</span>
+        </div>
+      </div>
+      <div class="proj-visual">
+        <div class="proj-thumb">
+          <div class="thumb-data">
+            <div class="bar" style="width:90%"></div>
+            <div class="bar" style="width:65%; opacity:0.6"></div>
+            <div class="bar" style="width:80%; opacity:0.4"></div>
+            <div class="bar" style="width:45%; opacity:0.7"></div>
+          </div>
+        </div>
+      </div>
+    </a>
 
+    <a class="project-row fade-up" href="projects/powerbi-airport-layout.html">
+      <div class="proj-num">04</div>
+      <div class="proj-body">
+        <div class="proj-title">Power BI — Airport Layout Dashboard <span class="proj-arrow">→</span></div>
+        <p class="proj-desc">Interactive dashboard using the actual floor plan layout of the new Jorge Chavez Airport terminal to display equipment status and installation progress, giving project managers spatial context for decisions.</p>
+        <div class="proj-tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">Layout</span>
+          <span class="tag">Visualization</span>
+        </div>
+      </div>
+      <div class="proj-visual">
+        <div class="proj-thumb">
+          <div class="thumb-data" style="background:#1a2e4a">
+            <div class="bar" style="width:100%; height:6px; background:#c8a96e; opacity:0.9"></div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:6px">
+              <div style="background:rgba(184,147,74,0.3);height:20px;border-radius:1px"></div>
+              <div style="background:rgba(184,147,74,0.5);height:20px;border-radius:1px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
 
+    <a class="project-row fade-up" href="projects/solar-panel.html">
+      <div class="proj-num">05</div>
+      <div class="proj-body">
+        <div class="proj-title">Solar Panel Installation <span class="proj-arrow">→</span></div>
+        <p class="proj-desc">End-to-end installation project for a solar energy system, covering site survey, panel layout design, structural considerations, and on-site supervision — bridging mechanical know-how with energy solutions.</p>
+        <div class="proj-tags">
+          <span class="tag">Energy</span>
+          <span class="tag">Field</span>
+          <span class="tag">Mechanical</span>
+        </div>
+      </div>
+      <div class="proj-visual">
+        <div class="proj-thumb">
+          <div class="thumb-solar">
+            <div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div>
+          </div>
+        </div>
+      </div>
+    </a>
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; F. Sanchez. All Rights Reserved</p>
-									Template: <a href="https://html5up.net">HTML5 UP</a>.
-								</footer>
+    <a class="project-row fade-up" href="projects/python-automation.html">
+      <div class="proj-num">06</div>
+      <div class="proj-body">
+        <div class="proj-title">Python Automation — Resource Scheduling <span class="proj-arrow">→</span></div>
+        <p class="proj-desc">Wrote Python scripts to automate daily resource assignment, cross-referencing field technician availability, site access permissions, and equipment logs — cutting manual coordination from hours to minutes.</p>
+        <div class="proj-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Automation</span>
+          <span class="tag">Dev</span>
+        </div>
+      </div>
+      <div class="proj-visual">
+        <div class="proj-thumb">
+          <div class="thumb-python">
+            <div>import pandas as pd</div>
+            <div>def assign_resources(df):</div>
+            <div style="padding-left:12px">  mask = df['status']</div>
+            <div style="padding-left:12px">  return df[mask]</div>
+            <div>→ saved 75% time</div>
+          </div>
+        </div>
+      </div>
+    </a>
 
-						</div>
-					</div>
+  </div>
+</section>
 
-			</div>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-header fade-up">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Experience</h2>
+    <div class="section-rule"></div>
+  </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <div class="exp-grid fade-up">
+    <div class="exp-timeline">
+      <div class="exp-item active" data-target="exp-huawei" onclick="setExp(this)">
+        <div class="exp-period">Oct 2024 – Mar 2026</div>
+        <div class="exp-company">Huawei Peru SAC</div>
+        <div class="exp-role">Project Supervisor</div>
+      </div>
+      <div class="exp-item" data-target="exp-tempel" onclick="setExp(this)">
+        <div class="exp-period">Jun 2023 – Feb 2024</div>
+        <div class="exp-company">Tempel Group</div>
+        <div class="exp-role">Project Assistant</div>
+      </div>
+    </div>
 
-	</body>
+    <div class="exp-detail">
+      <!-- HUAWEI -->
+      <div id="exp-huawei" class="exp-panel active">
+        <div class="exp-panel-title">Huawei Peru SAC</div>
+        <div class="exp-panel-role">Project Supervisor · via Adecco Consulting S.A.</div>
+
+        <div class="exp-project">
+          <div class="exp-proj-name">DAS Project — New Jorge Chavez Airport Terminal 2</div>
+          <div class="exp-bullet">Optimized resource assignment using Python, reducing processing time by 75% and generating S/ 48,000 in annual savings.</div>
+          <div class="exp-bullet">Increased daily productivity by 40% through coordination of LAP and BHS agents, streamlining multi-operator handoffs.</div>
+          <div class="exp-bullet">Supervised subcontractor installation and quality assurance, enforcing Huawei standards across antenna deployment phases.</div>
+        </div>
+        <div class="exp-project">
+          <div class="exp-proj-name">DAS Project — Metro de Lima Line 2</div>
+          <div class="exp-bullet">Managed OT3 work order openings in coordination with station security control centers, ensuring access compliance.</div>
+          <div class="exp-bullet">Implemented daily and advance progress reports for station deployment phases, reducing dead times and improving resource traceability.</div>
+          <div class="exp-bullet">Controlled inventory and material tracking for all resources assigned across underground stations.</div>
+        </div>
+      </div>
+
+      <!-- TEMPEL -->
+      <div id="exp-tempel" class="exp-panel">
+        <div class="exp-panel-title">Tempel Peru SAC</div>
+        <div class="exp-panel-role">Practicante Profesional de Proyectos · Supply of Electronic Devices</div>
+
+        <div class="exp-project">
+          <div class="exp-proj-name">Project Lifecycle Management</div>
+          <div class="exp-bullet">Built Power BI dashboards to monitor project lifecycle (planning, execution, closure) across CLARO, ENTEL, SDP, ATC, and ATP client sites.</div>
+          <div class="exp-bullet">Managed PAP access controls for technical and administrative field staff at multiple telecom sites simultaneously.</div>
+          <div class="exp-bullet">Administered equipment logistics and inventory — coordinating suppliers and tracking delivery status to ensure operational continuity.</div>
+          <div class="exp-bullet">Supervised field technicians and data collectors; ensured accurate, timely reporting for client documentation.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header fade-up">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Tools & Skills</h2>
+    <div class="section-rule" style="background:rgba(255,255,255,0.15)"></div>
+  </div>
+  <div class="skills-grid fade-up stagger">
+    <div class="skill-cell" style="--i:0">
+      <div class="skill-name">Python</div>
+      <div class="skill-desc">Automation scripts, data pipelines, resource scheduling tools</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div>
+    </div>
+    <div class="skill-cell" style="--i:1">
+      <div class="skill-name">Power BI</div>
+      <div class="skill-desc">Executive dashboards, KPI reporting, interactive layouts</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:90%"></div></div>
+    </div>
+    <div class="skill-cell" style="--i:2">
+      <div class="skill-name">SAP PM</div>
+      <div class="skill-desc">Work order management, maintenance planning, asset tracking</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+    </div>
+    <div class="skill-cell" style="--i:3">
+      <div class="skill-name">AutoCAD</div>
+      <div class="skill-desc">2D technical drawings, layout design, site schematics</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:70%"></div></div>
+    </div>
+    <div class="skill-cell" style="--i:4">
+      <div class="skill-name">Excel</div>
+      <div class="skill-desc">Advanced formulas, Gantt charts, data analysis, reporting</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:95%"></div></div>
+    </div>
+    <div class="skill-cell" style="--i:5">
+      <div class="skill-name">AI Tools</div>
+      <div class="skill-desc">Claude Code, Gemini Pro — workflow automation & development</div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-header fade-up">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Education</h2>
+    <div class="section-rule"></div>
+  </div>
+
+  <div class="edu-grid fade-up">
+    <div class="edu-card">
+      <div class="edu-type">Degree</div>
+      <div class="edu-degree">Bachelor in Mechanical Engineering</div>
+      <div class="edu-school">Universidad Nacional de Trujillo</div>
+      <div class="edu-period">2018 – 2023</div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-type">Complementary Studies</div>
+      <div class="cert-list">
+        <div class="cert-item"><div class="cert-dot"></div>Diploma Standard English Program — English School of Canada</div>
+        <div class="cert-item"><div class="cert-dot"></div>Python for Data Science — Universidad del Pacífico</div>
+        <div class="cert-item"><div class="cert-dot"></div>Power BI & Excel Advanced</div>
+        <div class="cert-item"><div class="cert-dot"></div>AI: Gemini Pro, Claude Code</div>
+        <div class="cert-item"><div class="cert-dot"></div>SAP PM · AutoCAD 2D · Mathcad · Autodesk Inventor</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="contact-headline fade-up">Let's build something <span>together.</span></h2>
+  <div class="contact-grid fade-up">
+    <div class="contact-item">
+      <div class="contact-label">Email</div>
+      <div class="contact-value"><a href="mailto:dimitrios.sb@outlook.com">dimitrios.sb@outlook.com</a></div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-label">LinkedIn</div>
+      <div class="contact-value"><a href="https://www.linkedin.com/in/franko-sanchez-es" target="_blank" rel="noopener">/in/franko-sanchez-es</a></div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-label">Location</div>
+      <div class="contact-value" style="color:rgba(255,255,255,0.6)">Lima, Peru</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-name">Franko Dimitrios Sanchez Betancourt</div>
+    <div class="footer-copy">© 2026 · Mechanical Engineer & Data Analyst</div>
+  </div>
+</section>
+
+<script src="site.js"></script>
+</body>
 </html>
