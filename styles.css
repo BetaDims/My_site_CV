@@ -95,6 +95,23 @@ body {
   display: inline-block;
 }
 .nav-cv:hover { background: var(--gold); }
+.nav-lang { display: flex; align-items: center; gap: 7px; }
+.lang-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: none;
+  padding: 4px 2px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.lang-btn:hover { color: var(--navy); }
+.lang-btn.is-active { color: var(--gold); font-weight: 600; }
+.lang-sep { color: var(--rule); font-size: 12px; user-select: none; }
 
 /* ── HERO ──────────────────────────────────────────────────────── */
 #hero {
