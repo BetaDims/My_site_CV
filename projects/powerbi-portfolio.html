@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power BI — Project Portfolio Dashboard · Franko Sanchez</title>
+<meta name="description" content="An executive Power BI dashboard tracking purchase orders, follow-up activities and project KPIs across multiple active sites in real time.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script>
+  (function () {
+    try {
+      document.documentElement.setAttribute('data-theme', localStorage.getItem('portfolio-theme') || 'warm');
+      var a = localStorage.getItem('portfolio-accent');
+      if (a) document.documentElement.style.setProperty('--gold', a);
+    } catch (e) { document.documentElement.setAttribute('data-theme', 'warm'); }
+  })();
+</script>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="nav-name" href="../index.html">Franko Sanchez</a>
+  <ul class="nav-links">
+    <li><a href="../index.html#projects">Work</a></li>
+    <li><a href="../index.html#experience">Experience</a></li>
+    <li><a href="../index.html#skills">Skills</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+    <li><a class="nav-cv" href="https://drive.google.com/file/d/1eXNd9Nw82q6KJL6VeyvaZjGV1AnZazdi/view?usp=sharing" target="_blank" rel="noopener">CV ↓</a></li>
+  </ul>
+</nav>
+
+<header class="detail-head">
+  <a class="back-link fade-up" href="../index.html#projects">← Back to work</a>
+  <div class="detail-eyebrow fade-up">Project 03 · Data &amp; Visualization</div>
+  <h1 class="detail-title fade-up">Power BI — Project Portfolio Dashboard</h1>
+  <p class="detail-lead fade-up">A single executive view of every active project — purchase orders, follow-up activities and KPIs — pulled together so leadership could see budget and execution status in real time instead of chasing spreadsheets.</p>
+
+  <div class="detail-meta fade-up">
+    <div class="meta-cell"><div class="meta-label">Role</div><div class="meta-value">Project Assistant</div></div>
+    <div class="meta-cell"><div class="meta-label">Tool</div><div class="meta-value">Microsoft Power BI</div></div>
+    <div class="meta-cell"><div class="meta-label">Type</div><div class="meta-value">Personal / Internal</div></div>
+    <div class="meta-cell"><div class="meta-label">Focus</div><div class="meta-value">PO &amp; KPI tracking</div></div>
+  </div>
+</header>
+
+<!-- DASHBOARD HERO VISUAL -->
+<section class="block" style="padding-top:48px;padding-bottom:48px">
+  <figure class="fade-up">
+    <div class="shot ar-16-9">
+      <img src="../images/powerbi-portfolio-cover.jpg" alt="Power BI project portfolio dashboard — full view" onerror="this.style.display='none'">
+      <div class="ph"><span class="ph-file">images/powerbi-portfolio-cover.jpg</span><span class="ph-hint">Full dashboard screenshot — landing / overview page (16:9)</span></div>
+    </div>
+    <figcaption class="shot-cap">The overview page — KPIs, PO totals and follow-up status at a glance.</figcaption>
+  </figure>
+</section>
+
+<!-- 01 THE PROBLEM -->
+<section class="block">
+  <div class="block-head fade-up">
+    <span class="block-num">01</span>
+    <h2 class="block-title">The Problem</h2>
+    <div class="block-rule"></div>
+  </div>
+  <div class="two-col">
+    <div class="prose fade-up">
+      <p class="lead-graf">Project status lived in too many places at once.</p>
+      <p>Purchase orders sat in one spreadsheet, follow-up activities in another, and progress in someone's inbox. Answering a simple question — <em>how much have we committed, and where do things stand?</em> — meant stitching files together by hand every time leadership asked.</p>
+    </div>
+    <div class="fade-up">
+      <div class="pull"><p>One question, three spreadsheets, every time. The dashboard ended that.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 WHAT IT TRACKS -->
+<section class="block">
+  <div class="block-head fade-up">
+    <span class="block-num">02</span>
+    <h2 class="block-title">What It Tracks</h2>
+    <div class="block-rule"></div>
+  </div>
+  <div class="feature-grid fade-up">
+    <div class="feature-cell">
+      <div class="feature-icon">◷</div>
+      <div class="feature-name">Purchase Orders</div>
+      <div class="feature-text">Total committed amount per project and per site, with status roll-ups so nothing slips between the cracks.</div>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">◆</div>
+      <div class="feature-name">Follow-up Activities</div>
+      <div class="feature-text">Open items, owners and due states — the operational to-do layer behind each project.</div>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">▲</div>
+      <div class="feature-name">Project KPIs</div>
+      <div class="feature-text">Execution and budget indicators that surface which projects are healthy and which need attention.</div>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">◰</div>
+      <div class="feature-name">Multi-site View</div>
+      <div class="feature-text">Filter across every active site at once, or drill into a single one — same dashboard, one click.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 IMPACT -->
+<section class="block">
+  <div class="block-head fade-up">
+    <span class="block-num">03</span>
+    <h2 class="block-title">Impact</h2>
+    <div class="block-rule"></div>
+  </div>
+  <div class="prose fade-up">
+    <p>The dashboard replaced a recurring manual reporting chore with a live view leadership could open themselves. Budget commitments and execution status became answerable in seconds — and the conversation shifted from <em>“what's the number?”</em> to <em>“what do we do about it?”</em></p>
+  </div>
+  <figure class="fade-up" style="margin-top:36px">
+    <div class="shot ar-16-9">
+      <img src="../images/powerbi-portfolio-detail.jpg" alt="Power BI dashboard — drill-down detail page" onerror="this.style.display='none'">
+      <div class="ph"><span class="ph-file">images/powerbi-portfolio-detail.jpg</span><span class="ph-hint">Screenshot — a drill-down / detail page of the report (16:9)</span></div>
+    </div>
+    <figcaption class="shot-cap">Drill-down view — single-project detail with PO and activity breakdown.</figcaption>
+  </figure>
+</section>
+
+<!-- PREV / NEXT -->
+<nav class="detail-foot-nav">
+  <a class="foot-nav-link prev" href="metro-lima.html"><div class="foot-nav-dir">← Previous</div><div class="foot-nav-title">DAS — Metro de Lima, Line 2</div></a>
+  <a class="foot-nav-link next" href="powerbi-airport-layout.html"><div class="foot-nav-dir">Next →</div><div class="foot-nav-title">Power BI — Airport Layout Dashboard</div></a>
+</nav>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="contact-headline fade-up">Let's build something <span>together.</span></h2>
+  <div class="contact-grid fade-up">
+    <div class="contact-item"><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:dimitrios.sb@outlook.com">dimitrios.sb@outlook.com</a></div></div>
+    <div class="contact-item"><div class="contact-label">LinkedIn</div><div class="contact-value"><a href="https://www.linkedin.com/in/franko-sanchez-es" target="_blank" rel="noopener">/in/franko-sanchez-es</a></div></div>
+    <div class="contact-item"><div class="contact-label">Location</div><div class="contact-value" style="color:rgba(255,255,255,0.6)">Lima, Peru</div></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-name">Franko Dimitrios Sanchez Betancourt</div>
+    <div class="footer-copy">© 2026 · Mechanical Engineer & Data Analyst</div>
+  </div>
+</section>
+
+<script src="../site.js"></script>
+</body>
+</html>

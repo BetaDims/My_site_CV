@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power BI — Airport Layout Dashboard · Franko Sanchez</title>
+<meta name="description" content="A spatial Power BI dashboard mapping equipment status and installation progress onto the actual floor plan of the new Jorge Chavez Airport terminal.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script>
+  (function () {
+    try {
+      document.documentElement.setAttribute('data-theme', localStorage.getItem('portfolio-theme') || 'warm');
+      var a = localStorage.getItem('portfolio-accent');
+      if (a) document.documentElement.style.setProperty('--gold', a);
+    } catch (e) { document.documentElement.setAttribute('data-theme', 'warm'); }
+  })();
+</script>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="nav-name" href="../index.html">Franko Sanchez</a>
+  <ul class="nav-links">
+    <li><a href="../index.html#projects">Work</a></li>
+    <li><a href="../index.html#experience">Experience</a></li>
+    <li><a href="../index.html#skills">Skills</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+    <li><a class="nav-cv" href="https://drive.google.com/file/d/1eXNd9Nw82q6KJL6VeyvaZjGV1AnZazdi/view?usp=sharing" target="_blank" rel="noopener">CV ↓</a></li>
+  </ul>
+</nav>
+
+<header class="detail-head">
+  <a class="back-link fade-up" href="../index.html#projects">← Back to work</a>
+  <div class="detail-eyebrow fade-up">Project 04 · Data &amp; Visualization</div>
+  <h1 class="detail-title fade-up">Power BI — Airport Layout Dashboard</h1>
+  <p class="detail-lead fade-up">Most dashboards are charts. This one is a map — the actual floor plan of the new Jorge Chavez terminal, with equipment status and installation progress painted directly onto the spaces they belong to.</p>
+
+  <div class="detail-meta fade-up">
+    <div class="meta-cell"><div class="meta-label">Role</div><div class="meta-value">Project Supervisor</div></div>
+    <div class="meta-cell"><div class="meta-label">Tool</div><div class="meta-value">Power BI</div></div>
+    <div class="meta-cell"><div class="meta-label">Context</div><div class="meta-value">Airport T2 / DAS</div></div>
+    <div class="meta-cell"><div class="meta-label">Focus</div><div class="meta-value">Spatial reporting</div></div>
+  </div>
+</header>
+
+<!-- DASHBOARD HERO VISUAL -->
+<section class="block" style="padding-top:48px;padding-bottom:48px">
+  <figure class="fade-up">
+    <div class="shot ar-16-9">
+      <img src="../images/powerbi-layout-cover.jpg" alt="Power BI airport layout dashboard mapped onto the terminal floor plan" onerror="this.style.display='none'">
+      <div class="ph"><span class="ph-file">images/powerbi-layout-cover.jpg</span><span class="ph-hint">Full dashboard screenshot — the layout / floor-plan view (16:9)</span></div>
+    </div>
+    <figcaption class="shot-cap">Status mapped onto the real terminal layout — green where it's done, gold where it's pending.</figcaption>
+  </figure>
+</section>
+
+<!-- 01 THE IDEA -->
+<section class="block">
+  <div class="block-head fade-up">
+    <span class="block-num">01</span>
+    <h2 class="block-title">The Idea</h2>
+    <div class="block-rule"></div>
+  </div>
+  <div class="two-col">
+    <div class="prose fade-up">
+      <p class="lead-graf">A table tells you <em>how much</em>. A map tells you <em>where</em>.</p>
+      <p>On a terminal the size of T2, a list of pending equipment doesn't help a manager standing on site — they need to know <em>which part of the building</em> is behind. So I built the report on top of the actual airport floor plan, turning installation data into something you could read like a site map.</p>
+    </div>
+    <div class="fade-up">
+      <div class="pull"><p>A table tells you how much. A map tells you where.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 HOW IT WORKS -->
+<section class="block">
+  <div class="block-head fade-up">
+    <span class="block-num">02</span>
+    <h2 class="block-title">How It Works</h2>
+    <div class="block-rule"></div>
+  </div>
+  <div class="feature-grid fade-up">
+    <div class="feature-cell">
+      <div class="feature-icon">▦</div>
+      <div class="feature-name">Real Floor Plan</div>
+      <div class="feature-text">The terminal's own layout sits underneath the report, so every data point lands in its true physical location.</div>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">◉</div>
+      <div class="feature-name">Equipment Status</div>
+      <div class="feature-text">Each zone is colour-coded by state — installed, in progress, pending — readable in a single glance.</div>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">↗</div>
+      <div class="feature-name">Progress Over Time</div>
+      <div class="feature-text">Installation advance per area, so leadership can see momentum across the building, not just totals.</div>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">⊕</div>
+      <div class="feature-name">Spatial Context</div>
+      <div class="feature-text">Decisions get made against the building itself — where to send crews next becomes obvious.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 WHY IT MATTERED -->
+<section class="block">
+  <div class="block-head fade-up">
+    <span class="block-num">03</span>
+    <h2 class="block-title">Why It Mattered</h2>
+    <div class="block-rule"></div>
+  </div>
+  <div class="prose fade-up">
+    <p>Giving project managers spatial context changed how the deployment was steered. Instead of reading a status table and translating it in their heads, they could look at the terminal and immediately see where to focus — turning reporting into a planning tool.</p>
+  </div>
+  <figure class="fade-up" style="margin-top:36px">
+    <div class="shot ar-16-9">
+      <img src="../images/powerbi-layout-detail.jpg" alt="Power BI layout dashboard — zoomed zone detail" onerror="this.style.display='none'">
+      <div class="ph"><span class="ph-file">images/powerbi-layout-detail.jpg</span><span class="ph-hint">Screenshot — a zoomed zone / sector detail view (16:9)</span></div>
+    </div>
+    <figcaption class="shot-cap">Zone detail — drilling into a single sector of the terminal.</figcaption>
+  </figure>
+</section>
+
+<!-- PREV / NEXT -->
+<nav class="detail-foot-nav">
+  <a class="foot-nav-link prev" href="powerbi-portfolio.html"><div class="foot-nav-dir">← Previous</div><div class="foot-nav-title">Power BI — Project Portfolio Dashboard</div></a>
+  <a class="foot-nav-link next" href="solar-panel.html"><div class="foot-nav-dir">Next →</div><div class="foot-nav-title">Solar Panel Installation</div></a>
+</nav>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="contact-headline fade-up">Let's build something <span>together.</span></h2>
+  <div class="contact-grid fade-up">
+    <div class="contact-item"><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:dimitrios.sb@outlook.com">dimitrios.sb@outlook.com</a></div></div>
+    <div class="contact-item"><div class="contact-label">LinkedIn</div><div class="contact-value"><a href="https://www.linkedin.com/in/franko-sanchez-es" target="_blank" rel="noopener">/in/franko-sanchez-es</a></div></div>
+    <div class="contact-item"><div class="contact-label">Location</div><div class="contact-value" style="color:rgba(255,255,255,0.6)">Lima, Peru</div></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-name">Franko Dimitrios Sanchez Betancourt</div>
+    <div class="footer-copy">© 2026 · Mechanical Engineer & Data Analyst</div>
+  </div>
+</section>
+
+<script src="../site.js"></script>
+</body>
+</html>

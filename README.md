@@ -1,36 +1,30 @@
-# My own website
-In progress
-This repository containts all the code that is used for my own website and it can be used as a reference for anyone.
+# Franko Sanchez — Portfolio & CV
 
+Personal portfolio website for **Franko Dimitrios Sanchez Betancourt** — Mechanical
+Engineer & Data Analyst. A static site bridging field infrastructure work, data
+analytics, and Python automation.
 
+## Structure
 
-Editorial by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+```
+index.html        # Home: hero, selected work, experience, skills, education, contact
+styles.css        # All styles (themeable via CSS variables)
+site.js           # Interactions: theme toggle, scroll reveals, experience tabs
+projects/         # Individual project case-study pages
+images/           # Photos & screenshots (see images/README.txt for filenames)
+```
 
+## Adding images
 
-Say hello to Editorial, a blog/magazine-ish template built around a toggleable "locking"
-sidebar (scroll down to see what I mean) and an accordion-style menu. Not the usual landing
-page/portfolio affair you'd expect to see at HTML5 UP, but I figured for my 41st (!!!)
-template I'd change it up a little. Enjoy :)
+The site renders styled placeholders until you drop in matching photos. See
+[`images/README.txt`](images/README.txt) for the exact filenames each spot expects —
+no code changes needed once a file is in place.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+## Running locally
 
-(* = not included)
+It's a plain static site — open `index.html` directly, or serve it:
 
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+```bash
+python3 -m http.server 8000
+# then visit http://localhost:8000
+```

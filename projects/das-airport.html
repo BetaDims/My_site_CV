@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAS System — Jorge Chavez Airport T2 · Franko Sanchez</title>
+<meta name="description" content="Distributed antenna system deployment at Peru's new international terminal — field supervision plus Python automation that cut scheduling time 75%.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script>
+  (function () {
+    try {
+      document.documentElement.setAttribute('data-theme', localStorage.getItem('portfolio-theme') || 'warm');
+      var a = localStorage.getItem('portfolio-accent');
+      if (a) document.documentElement.style.setProperty('--gold', a);
+    } catch (e) { document.documentElement.setAttribute('data-theme', 'warm'); }
+  })();
+</script>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="nav-name" href="../index.html">Franko Sanchez</a>
+  <ul class="nav-links">
+    <li><a href="../index.html#projects">Work</a></li>
+    <li><a href="../index.html#experience">Experience</a></li>
+    <li><a href="../index.html#skills">Skills</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+    <li><a class="nav-cv" href="https://drive.google.com/file/d/1eXNd9Nw82q6KJL6VeyvaZjGV1AnZazdi/view?usp=sharing" target="_blank" rel="noopener">CV ↓</a></li>
+  </ul>
+</nav>
+
+<!-- HEAD -->
+<header class="detail-head">
+  <a class="back-link fade-up" href="../index.html#projects">← Back to work</a>
+  <div class="detail-eyebrow fade-up">Project 01 · Infrastructure</div>
+  <h1 class="detail-title fade-up">DAS System — Jorge Chavez Airport, Terminal 2</h1>
+  <p class="detail-lead fade-up">Supervised the deployment of a distributed antenna system across Peru's new international terminal — coordinating subcontractors and airport operators in the field, while building the Python automation that cut resource-scheduling time by three quarters.</p>
+
+  <div class="detail-meta fade-up">
+    <div class="meta-cell"><div class="meta-label">Role</div><div class="meta-value">Project Supervisor</div></div>
+    <div class="meta-cell"><div class="meta-label">Client</div><div class="meta-value">Huawei Peru SAC</div></div>
+    <div class="meta-cell"><div class="meta-label">Timeline</div><div class="meta-value">2024 – 2026</div></div>
+    <div class="meta-cell"><div class="meta-label">Location</div><div class="meta-value">Callao, Peru</div></div>
+  </div>
+  <div class="metric-band fade-up">
+    <div class="metric-cell"><div class="metric-num">75%</div><div class="metric-desc">Reduction in resource-scheduling processing time via Python</div></div>
+    <div class="metric-cell"><div class="metric-num">S/ 48K</div><div class="metric-desc">Estimated annual savings from the automation</div></div>
+    <div class="metric-cell"><div class="metric-num">40%</div><div class="metric-desc">Daily productivity gain through LAP / BHS coordination</div></div>
+  </div>
+</header>
+
+<!-- COVER -->
+<section class="block" style="padding-top:48px;padding-bottom:48px">
+  <figure class="fade-up">
+    <div class="shot ar-16-9">
+      <img src="../images/das-airport-cover.jpg" alt="DAS antenna installation in progress at Jorge Chavez Airport Terminal 2" onerror="this.style.display='none'">
+      <div class="ph"><span class="ph-file">images/das-airport-cover.jpg</span><span class="ph-hint">Wide shot — terminal interior or antenna installation (16:9)</span></div>
+    </div>
+    <figcaption class="shot-cap">The new Terminal 2 — among the largest infrastructure projects in Peru's recent history.</figcaption>
+  </figure>
+</section>
+
+<!-- 01 OVERVIEW -->
+<section class="block">
+  <div class="block-head fade-up">
+    <span class="block-num">01</span>
+    <h2 class="block-title">Overview</h2>
+    <div class="block-rule"></div>
+  </div>
+  <div class="prose fade-up">
+    <p class="lead-graf">A distributed antenna system (DAS) carries reliable cellular coverage deep into a building where the structure itself would otherwise block it — exactly the problem a vast new airport terminal presents.</p>
+    <p>As Project Supervisor for Huawei (via Adecco Consulting), I owned the field execution: making sure each antenna run was installed to standard, coordinating the subcontractor crews, and interfacing with the airport's own operators — <strong>LAP</strong> (Lima Airport Partners) and the <strong>BHS</strong> baggage-handling teams — whose schedules and access windows dictated when and where we could work.</p>
+    <p>The deployment lived or died on coordination. Dozens of people, multiple operators, and a live construction site meant scheduling was the real bottleneck — so that's where I focused the engineering.</p>
+  </div>
+</section>
+
+<!-- 02 CHALLENGE -->
+<section class="block">
+  <div class="block-head fade-up">
+    <span class="block-num">02</span>
+    <h2 class="block-title">The Challenge</h2>
+    <div class="block-rule"></div>
+  </div>
+  <div class="two-col">
+    <div class="prose fade-up">
+      <p>Resource scheduling was being done by hand — cross-referencing technician availability, site-access permissions and equipment logs across spreadsheets every single day. It was slow, error-prone, and it didn't scale with the size of the terminal.</p>
+      <p>Every hour spent re-building the day's plan was an hour not spent in the field assuring installation quality. Manual handoffs between Huawei crews and the LAP / BHS operators created dead time on both sides.</p>
+    </div>
+    <div class="fade-up">
+      <div class="pull"><p>The deployment lived or died on coordination — so that's where I put the engineering.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 APPROACH -->
+<section class="block">
+  <div class="block-head fade-up">
+    <span class="block-num">03</span>
+    <h2 class="block-title">Approach</h2>
+    <div class="block-rule"></div>
+  </div>
+  <div class="two-col wide-left">
+    <div class="prose fade-up">
+      <p class="lead-graf">I wrote a Python tool to do the scheduling that was eating the day.</p>
+      <p>Using <strong>pandas</strong>, the script ingests the daily inputs — technician roster, access permissions per zone, equipment availability — and outputs a conflict-free assignment in seconds instead of hours. What had been a manual morning ritual became a single run.</p>
+      <p>In parallel, I restructured the human coordination: aligning Huawei's crews with LAP and BHS access windows so teams weren't waiting on each other, which lifted daily productivity by 40%.</p>
+    </div>
+    <div class="fade-up">
+      <div class="detail-list">
+        <div class="row"><span class="n">→</span><span class="t"><b>Automated assignment</b>Python + pandas matches technicians to zones against live permissions.</span></div>
+        <div class="row"><span class="n">→</span><span class="t"><b>Quality assurance</b>Field supervision enforcing Huawei installation standards run by run.</span></div>
+        <div class="row"><span class="n">→</span><span class="t"><b>Operator coordination</b>Synced crews with LAP &amp; BHS windows to remove dead time.</span></div>
+      </div>
+    </div>
+  </div>
+  <figure class="fade-up" style="margin-top:40px">
+    <div class="gallery-2">
+      <div class="shot ar-4-3">
+        <img src="../images/das-airport-install.jpg" alt="Technician installing DAS antenna hardware at the terminal" onerror="this.style.display='none'">
+        <div class="ph"><span class="ph-file">images/das-airport-install.jpg</span><span class="ph-hint">Field photo — installation / supervision (4:3)</span></div>
+      </div>
+      <div class="shot ar-4-3">
+        <img src="../images/das-airport-schedule.jpg" alt="Screenshot of the Python scheduling tool output" onerror="this.style.display='none'">
+        <div class="ph"><span class="ph-file">images/das-airport-schedule.jpg</span><span class="ph-hint">Screenshot — scheduling tool / spreadsheet (4:3)</span></div>
+      </div>
+    </div>
+  </figure>
+</section>
+
+<!-- 04 RESULTS -->
+<section class="block">
+  <div class="block-head fade-up">
+    <span class="block-num">04</span>
+    <h2 class="block-title">Results</h2>
+    <div class="block-rule"></div>
+  </div>
+  <div class="prose fade-up">
+    <p>The automation removed the single biggest time sink in the daily workflow and freed me to spend the day where it mattered — in the field, on quality.</p>
+  </div>
+  <div class="metric-band cols-2 fade-up" style="margin-top:32px;border-top:1px solid var(--rule)">
+    <div class="metric-cell"><div class="metric-num">75%</div><div class="metric-desc">Less time spent on resource scheduling each day</div></div>
+    <div class="metric-cell"><div class="metric-num">S/ 48K</div><div class="metric-desc">Estimated savings per year from reclaimed hours</div></div>
+  </div>
+</section>
+
+<!-- PREV / NEXT -->
+<nav class="detail-foot-nav">
+  <a class="foot-nav-link prev disabled" href="#"><div class="foot-nav-dir">← Previous</div><div class="foot-nav-title">—</div></a>
+  <a class="foot-nav-link next" href="metro-lima.html"><div class="foot-nav-dir">Next →</div><div class="foot-nav-title">DAS — Metro de Lima, Line 2</div></a>
+</nav>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="contact-headline fade-up">Let's build something <span>together.</span></h2>
+  <div class="contact-grid fade-up">
+    <div class="contact-item"><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:dimitrios.sb@outlook.com">dimitrios.sb@outlook.com</a></div></div>
+    <div class="contact-item"><div class="contact-label">LinkedIn</div><div class="contact-value"><a href="https://www.linkedin.com/in/franko-sanchez-es" target="_blank" rel="noopener">/in/franko-sanchez-es</a></div></div>
+    <div class="contact-item"><div class="contact-label">Location</div><div class="contact-value" style="color:rgba(255,255,255,0.6)">Lima, Peru</div></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-name">Franko Dimitrios Sanchez Betancourt</div>
+    <div class="footer-copy">© 2026 · Mechanical Engineer & Data Analyst</div>
+  </div>
+</section>
+
+<script src="../site.js"></script>
+</body>
+</html>
